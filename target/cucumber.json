@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 2,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 343000000,
+              "duration": 272000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 3,
             "name": "user has already logged in to application",
             "match": {
               "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_has_already_logged_in_to_application()"
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-22T05:18:19.310Z",
+        "start_timestamp": "2021-02-22T05:56:13.293Z",
         "before": [
           {
             "result": {
-              "duration": 7608000000,
+              "duration": 3448000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "Dashboard page title",
+        "line": 39,
+        "name": "add users with all valid info",
         "description": "",
-        "id": "dashboard-page-feature;dashboard-page-title",
+        "id": "librarian--users-module;add-users-with-all-valid-info;;2",
         "after": [
           {
             "result": {
-              "duration": 779000000,
+              "duration": 676000000,
               "status": "passed"
             },
             "match": {
@@ -52,59 +52,95 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5053000000,
+              "duration": 1624000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user is on Dashboard page",
+            "line": 33,
+            "name": "the librarian is on the users page",
             "match": {
-              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_is_on_dashboard_page()"
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.theLibrarianIsOnTheUsersPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6000000,
+              "duration": 190000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user gets the URL of the page",
+            "line": 34,
+            "name": "user  click add user",
             "match": {
-              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_gets_the_url_of_the_page()"
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.user_click_add_user()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4000000,
+              "duration": 2967000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "page URL should should be \"http://library2.cybertekschool.com/#dashboard\"",
+            "line": 35,
+            "name": "user enter Full Name \"John Doe\" and password \"pass123\" and User Group \"Librarian\" and Start Date \"2021-02-21\" and  Email \"email123@hotmail.com\" and Status \"ACTIVE\" and End Date \"2021-03-21\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"http://library2.cybertekschool.com/#dashboard\"",
-                  "offset": 26
+                  "val": "\"John Doe\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"pass123\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"Librarian\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"2021-02-21\"",
+                  "offset": 97
+                },
+                {
+                  "val": "\"email123@hotmail.com\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"ACTIVE\"",
+                  "offset": 155
+                },
+                {
+                  "val": "\"2021-03-21\"",
+                  "offset": 177
                 }
               ],
-              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.page_url_should_should_be(java.lang.String)"
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.user_enter_full_name_and_password_and_user_group_and_start_date_and_email_and_status_and_end_date(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user click close",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.user_click_close()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@dash"
+            "name": "@dash1"
           }
         ]
       },
       {
-        "line": 4,
+        "line": 2,
         "name": "",
         "description": "",
         "type": "background",
@@ -112,10 +148,10 @@
         "steps": [
           {
             "result": {
-              "duration": 278000000,
+              "duration": 439000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 3,
             "name": "user has already logged in to application",
             "match": {
               "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_has_already_logged_in_to_application()"
@@ -125,11 +161,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-22T05:18:33.269Z",
+        "start_timestamp": "2021-02-22T05:56:22.631Z",
         "before": [
           {
             "result": {
-              "duration": 5629000000,
+              "duration": 3099000000,
               "status": "passed"
             },
             "match": {
@@ -137,14 +173,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Librarians  should have access to 3 modules",
+        "line": 40,
+        "name": "add users with all valid info",
         "description": "",
-        "id": "dashboard-page-feature;librarians--should-have-access-to-3-modules",
+        "id": "librarian--users-module;add-users-with-all-valid-info;;3",
         "after": [
           {
             "result": {
-              "duration": 815000000,
+              "duration": 709000000,
               "status": "passed"
             },
             "match": {
@@ -153,62 +189,99 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5012000000,
+              "duration": 2570000000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "user is on Dashboard page",
+            "line": 33,
+            "name": "the librarian is on the users page",
             "match": {
-              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_is_on_dashboard_page()"
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.theLibrarianIsOnTheUsersPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 69000000,
+              "duration": 320000000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "the user should see following modules",
+            "line": 34,
+            "name": "user  click add user",
             "match": {
-              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.the_user_should_see_following_modules(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.user_click_add_user()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Dashboard"
-                ]
-              },
-              {
-                "cells": [
-                  "Users"
-                ]
-              },
-              {
-                "cells": [
-                  "Books"
-                ]
-              }
-            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3819000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user enter Full Name \"Alex User\" and password \"abc456\" and User Group \"Students\" and Start Date \"2021-02-21\" and  Email \"alex123@hotmail.com\" and Status \"INACTIVE\" and End Date \"2021-03-21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Alex User\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"abc456\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Students\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"2021-02-21\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"alex123@hotmail.com\"",
+                  "offset": 120
+                },
+                {
+                  "val": "\"INACTIVE\"",
+                  "offset": 153
+                },
+                {
+                  "val": "\"2021-03-21\"",
+                  "offset": 177
+                }
+              ],
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.user_enter_full_name_and_password_and_user_group_and_start_date_and_email_and_status_and_end_date(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user click close",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianUsersModule_StepDefinitions.user_click_close()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@dash"
+            "name": "@dash1"
           }
         ]
       }
     ],
-    "name": "Dashboard Page Feature",
+    "name": "Librarian  Users module",
     "description": "",
-    "id": "dashboard-page-feature",
+    "id": "librarian--users-module",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Librarian_Dashboard.feature",
+    "uri": "file:src/test/resources/features/LibrarianUsersModule.feature",
     "tags": []
   }
 ]

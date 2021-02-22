@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LibrarianUsersPage extends BasePage{
 
-    @FindBy(className = "btn btn-lg btn-outline btn-primary btn-sm")
+    @FindBy(xpath = "//a[@class='btn btn-lg btn-outline btn-primary btn-sm']")
     public WebElement addUser;
     @FindBy(xpath = "//input[@name='full_name']")
     public WebElement fullName;
@@ -25,7 +25,7 @@ public class LibrarianUsersPage extends BasePage{
     public WebElement status;
     @FindBy(xpath = "//input[@name='end_date']")
     public WebElement endDate;
-    @FindBy(xpath = "//button[@type='cancel']")
+    @FindBy(xpath = "//button[@class='btn default']")
     public WebElement closeButton;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveChanges;

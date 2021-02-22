@@ -4,7 +4,7 @@ Feature: Librarian  Users module
 
 
   Scenario: Librarian UsersModule page title
-    Given user clicks on on Users page
+    Given the librarian is on the users page
     When user gets the URL of the page
     Then page URL should be "http://library2.cybertekschool.com/#users"
 
@@ -28,7 +28,7 @@ Feature: Librarian  Users module
       | Alex User | abc456   | Students  | 2021-02-21 | alex123@hotmail.com  | INACTIVE | 2021-03-21 |
 
 
-
+  @dash1
   Scenario Outline:add users with all valid info
     Given the librarian is on the users page
     When  user  click add user

@@ -10,6 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -29,13 +30,11 @@ public class LibrarianUsersModule_StepDefinitions {
 
     }
 
-    @Given("user clicks on on Users page")
-    public void user_clicks_on_on_users_page() {
-        librarianDashboard.clickUserModule();
-    }
+
 
     @Given("the librarian is on the users page")
     public void theLibrarianIsOnTheUsersPage() {
+        librarianDashboard.clickUserModule();
         Assert.assertEquals(librarianUsersPage.getTitle(), "Library");
 
     }
@@ -98,11 +97,12 @@ public class LibrarianUsersModule_StepDefinitions {
         librarianUsersPage.password.sendKeys(password);
         Select userGroups = new Select(librarianUsersPage.userGroup);
         userGroups.selectByVisibleText(userGroup);
-        librarianUsersPage.startDate.sendKeys(startDate);
+        librarianUsersPage.startDate.sendKeys(startDate+ Keys.ENTER);
         librarianUsersPage.email.sendKeys(email);
         Select select = new Select(librarianUsersPage.status);
         select.selectByVisibleText(status);
-        librarianUsersPage.endDate.sendKeys(endDate);
+        librarianUsersPage.endDate.sendKeys(endDate+ Keys.ENTER);
+        BrowserUtils.wait(2);
     }
 
     @Then("user click close")
