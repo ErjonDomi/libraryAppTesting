@@ -1,0 +1,214 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 343000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_has_already_logged_in_to_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-22T05:18:19.310Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7608000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.AppHooks.setupMethod()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Dashboard page title",
+        "description": "",
+        "id": "dashboard-page-feature;dashboard-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 779000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.AppHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5053000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on Dashboard page",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_is_on_dashboard_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user gets the URL of the page",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_gets_the_url_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "page URL should should be \"http://library2.cybertekschool.com/#dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://library2.cybertekschool.com/#dashboard\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.page_url_should_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dash"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_has_already_logged_in_to_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-22T05:18:33.269Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5629000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.AppHooks.setupMethod()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Librarians  should have access to 3 modules",
+        "description": "",
+        "id": "dashboard-page-feature;librarians--should-have-access-to-3-modules",
+        "after": [
+          {
+            "result": {
+              "duration": 815000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.AppHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5012000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is on Dashboard page",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.user_is_on_dashboard_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user should see following modules",
+            "match": {
+              "location": "com.library.step_definitions.LibrarianDashboard_StepDefinition.the_user_should_see_following_modules(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Dashboard"
+                ]
+              },
+              {
+                "cells": [
+                  "Users"
+                ]
+              },
+              {
+                "cells": [
+                  "Books"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dash"
+          }
+        ]
+      }
+    ],
+    "name": "Dashboard Page Feature",
+    "description": "",
+    "id": "dashboard-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Librarian_Dashboard.feature",
+    "tags": []
+  }
+]
